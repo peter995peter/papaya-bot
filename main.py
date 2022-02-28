@@ -155,4 +155,4 @@ async def on_message(message):
         embed.set_footer(text=f"發送者：{message.author}")
         await message.channel.send(embed=embed)
 
-client.run(os.environ['TOKEN']) #TOKEN在剛剛Discord Developer那邊「BOT」頁面裡面
+client.run('TOKEN') #TOKEN在剛剛Discord Developer那邊「BOT」頁面裡面
