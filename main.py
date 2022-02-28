@@ -82,7 +82,7 @@ async def on_message_edit(before, after):
 async def on_member_join(member):
   if member.guild.id == 879352540641255436:
     channel = client.get_channel(881428719640653834)
-    embed=discord.Embed(title="成員加入", description=f"歡迎 <@{member.id}> 加入木呱國", color=0xf5ec00)
+    embed=discord.Embed(title="成員加入", description=f"歡迎 <@{member.id}> 加入木呱國\n請去<#888675405618372608> 領身分組喔", color=0xf5ec00)
     embed.set_thumbnail(url=member.avatar_url)
     await channel.send(embed=embed)
 
